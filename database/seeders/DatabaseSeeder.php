@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Campaign;
+use App\Models\Image;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        Campaign::factory(10)
+            ->has(Image::factory()->count(3))
+            ->create();
     }
 }
