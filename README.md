@@ -22,7 +22,7 @@ DB_DATABASE=eskimi_ssp
 DB_USERNAME=root
 DB_PASSWORD=password set in laradock .env
 ``` 
-- Log into the workspace container using `docker-compose exec workspace bash`
+- Again in the laradock folder, log into the workspace container using `docker-compose exec workspace bash`
 - In the workspace container, run the following to install and compile dependencies 
 ```
 composer install
